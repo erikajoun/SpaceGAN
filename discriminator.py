@@ -23,7 +23,7 @@ class Discriminator(nn.Module):
 
             nn.Conv2d(512, 1, 4, 1, 0, bias = False), 
             nn.Sigmoid() 
-        )
+        ).cuda()
 
     def forward(self, input):
         output = self.main(input)
