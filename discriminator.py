@@ -5,7 +5,6 @@ class Discriminator(nn.Module):
     def __init__(self):
         super(Discriminator, self).__init__()
         self.main = nn.Sequential(
-
             nn.Conv2d(3, 64, 4, 2, 1, bias = False),
             nn.LeakyReLU(0.2, inplace = True),
 
